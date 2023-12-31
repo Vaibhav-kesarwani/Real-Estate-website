@@ -98,13 +98,93 @@
   --transition-duration-smooth: 500ms;
 }
 
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+/** RESET **/
 
-/*-----------------------------------*\
-  #TYPOGRAPHY
-\*-----------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+select {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+select {
+  width: 100%;
+  outline: none;
+}
+
+address {
+  font-style: normal;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+html {
+  font-family: var(--font-primary);
+  font-size: var(--fs-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--neutral-98);
+  color: var(--neutral-5);
+  font-size: var(--fs-body-medium);
+  line-height: var(--lh-body-medium);
+  height: 300vh;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--neutral-90);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--neutral-60);
+  border-radius: 4px;
+}
+
+/** TYPOGRAPHY **/
 
 /*-----------------------------------*\
   #REUSED STYLE
